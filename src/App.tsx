@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import AlbumList from './components/AlbumList';
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import Default from './template/default'
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSetTerm = (value: string) => {
+    console.log(value)
+    setSearchTerm(value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Default>
+      <Header />
+      <SearchBar
+        searchTerm={searchTerm}
+        handleSetTerm={handleSetTerm}
+      />
+      <AlbumList title={
+        searchTerm 
+        ? `Resultados encontrados para ${searchTerm}`
+        : 'Álbuns buscados recentemente'} />
+
+      {searchTerm && <AlbumList />}
+    </Default>
   );
 }
 
