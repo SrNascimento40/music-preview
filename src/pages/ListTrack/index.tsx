@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
-import AlbumList from '../../components/AlbumList';
-import Header from '../../components/Header';
-import SearchBar from '../../components/SearchBar';
-import Default from '../../template/default'
-import { Container, Row } from './styles';
+import React from 'react';
+import { Column, Container, Row } from './styles';
+import AlbumItem from '../../components/AlbumItem';
+import TrackList from '../../components/TrackList';
 
 export default function ListTrack() {
+  
   return (
     <Container>
       <Row>
-        <h1>oi</h1>
+        <h2 onClick={} > Voltar</h2>
       </Row>
-      <Row>
-        <h1>oi </h1>
-        <h1>oi </h1>
-        <h1>oia eu ai </h1>
-      </Row>
+      <Column>
+        <AlbumItem size="large" title="Filosofem" description='Burzum' imgSize='large'/>
+        <TrackList />
+      </Column>
     </Container>
   );
 }
