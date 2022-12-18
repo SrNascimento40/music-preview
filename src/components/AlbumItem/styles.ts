@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display:flex;
     flex-direction: column;
-    width: 170px;
-    justify-content: center;
+    width: var(--${(props: { size: string }) => props.size});
+    justify-content: var(--${(props: { size: string }) => props.size});
     align-items: center;
     gap:10px;
 `
@@ -17,7 +17,7 @@ export const Description = styled.h4`
     color: var(--secondary);
 `
 export const AlbumFolder = styled.img`
-    height: 170px;
-    width: 170px;
+    height: var(--${(props: { imgSize: string }) => props.imgSize});
+    width: var(--${(props: { imgSize: string }) => props.imgSize});
     background-color: purple;
 `

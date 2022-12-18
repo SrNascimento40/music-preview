@@ -8,14 +8,14 @@ export default function AlbumList({ title = 'Álbuns buscados recentemente', ...
     <Container>
       <Subtitle>{ title }</Subtitle>
       <Wrapper>
-        <AlbumItem />
-        <AlbumItem />
-        <AlbumItem />
-        <AlbumItem />
-        <AlbumItem />
-        <AlbumItem />
-        <AlbumItem />
-        <AlbumItem />
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
+        <AlbumItem size="medium" title="Filosofem" description='Burzum' imgSize='medium'/>
       </Wrapper>
     </Container>
   )
