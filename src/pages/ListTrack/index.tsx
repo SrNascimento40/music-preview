@@ -8,7 +8,7 @@ export default function ListTrack() {
   return (
     <Container>
       <Row>
-        <h2 onClick={} > Voltar</h2>
+        <h2> Voltar</h2>
       </Row>
       <Column>
         <AlbumItem size="large" title="Filosofem" description='Burzum' imgSize='large'/>
