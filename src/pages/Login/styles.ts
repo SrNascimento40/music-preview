@@ -9,3 +9,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 `
+export const InfoText = styled.p`
+    color: white;
+    font-size: var(--fontMedium);
+    line-height: var(--fontMedium);
+    text-align: center;
+`

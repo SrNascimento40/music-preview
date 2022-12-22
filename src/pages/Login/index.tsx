@@ -1,15 +1,15 @@
 import React from 'react';
-import { Container } from './styles';
-import LoginInput from '../../components/LoginInput';
-import Button from '../../components/Button';
+import { Container, InfoText } from './styles';
+import ButtonLogin from '../../components/ButtonLogin';
 
 
 export default function Login() {
 
   return (
     <Container>
-      <LoginInput />
-      <Button />
+      {/* <LoginInput /> */}
+      <InfoText> Faça login com sua conta Spotify para acessar os recursos do nosso site!</InfoText>
+      <ButtonLogin />
     </Container>
   );
 }
